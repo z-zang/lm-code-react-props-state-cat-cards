@@ -46,6 +46,7 @@ function App(): JSX.Element {
     }
     const handleAddCat = () => {
         if (newName && species && favFoods && birthYear !== 0) {
+            setError(false)
             const newCat = {
                 id: uuidv4(),
                 name: newName,
